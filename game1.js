@@ -134,7 +134,7 @@ function showResultOverlay(victory) {
 
     setTimeout(() => {
         window.location.href = 'index.html';
-    }, 10000);
+    }, 5000);
 }
 
 function validatePuzzleAnswer() {
@@ -189,5 +189,9 @@ window.addEventListener('DOMContentLoaded', () => {
         if (event.key === 'Enter') {
             validatePuzzleAnswer();
         }
+    });
+
+    document.getElementById('exitButton').addEventListener('click', () => {
+        window.location.href = 'index.html';
     });
 });
